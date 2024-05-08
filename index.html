@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cheat Sheet - A Basic Guide to CSS</title>
+</head>
+<body>
+    <header>
+        <h1>What is CSS?</h1>
+            <p><a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noreferrer noopener">CSS</a> - Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in a markup language such as HTML, XML, etc. CSS enhances the look and feel of the webpage by describing how elements should be rendered on screen or in other media.</p>
+
+        <h1>What is a CSS Cheat Sheet?</h1>
+            <p>This CSS Cheat Sheet provides you with the most common style snippets CSS gradient, background, button, font family, order, radius, box, and text-shadow generators, color picker, and more tools to add more visual weight to your document. All these and other useful web design tools can be found on this page. </p>
+    </header>
+    <h2 class="selectors"><span><strong>Selectors:</strong></span></h2><h3>Used to find or select the HTML elements you want to style. These are categorized as follows:</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Basic Selectors</th>
+                <th>Description</th>
+                <th>Syntax</th>
+            </tr>
+        <tbody>
+            <tr>
+                <td>Universal</td>
+                <td>Selects all elements on the pages</td>
+                <td>*{property:value;}</td>
+            </tr>
+            <tr>
+                <td>Type</td>
+                <td>Selects all HTML tag/element of given type in your document</td>
+                <td>p {property:value;}</td>
+            </tr>
+            <tr>
+                <td>Id</td>
+                <td>Selects and element based on the value of its unique id attribute</td>
+                <td>#id {property:value;}</td>
+            </tr>
+            <tr>
+                <td>Class</td>
+                <td>Selects all elements in the document that have the given class attribute</td>
+                <td>.class {property:value;}</td>
+            </tr>
+            <tr>
+                <td>Attribute</td>
+                <td>Selects all elements that have a specified attribute</td>
+                <td>a[attribute=value]{property:value;}</td>
+            </tr>
+            <tr>
+                <td>Combinators</td>
+                <td>Complex selectors consisting of more than one selector having some relationship between them</td>
+                <td>selector 1 selector2/ selector1+selector2/selector 1> selector 2 {property:value;}</td>
+            </tr>
+            <tr>
+                <td>Psuedo</td>
+                <td>Define the special state of an element to add an effect to an existing element based on its states</td>
+                <td>selector: pseudo-class{property:value;}</td>
+            </tr>
+
+        </tbody>    
+        </thead>
+    </table>
+    
+    <h2 class="fontprop"><strong><span>Font Properties:</span></strong></h2><h3>CSS font properties are used to set the font's content of the HTML element as per requirement.</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Description</th>
+                <th>Syntax</th>
+            </tr>    
+        </thead>
+        <tbody>
+            <tr>
+                <td>font-family</td>
+                <td>Specifies the font family to be usedfor the element's text content.</td>
+                <td>font-family:family-name|generic-family|initial|inherit;</td>
+            </tr>
+            <tr>
+                <td>font-style</td>
+                <td>Styles the text content in a normal, italic, or oblique face from it's font-family</td>
+                <td>font-style:normal |italic|oblique|initial|inherit</td>
+            </tr>
+            <tr>
+                <td>font-variant</td>
+                <td>Converts all lowercase letters into uppercase letters.</td>
+                <td>font-variant: normal|smallcaps|initial;</td>
+            </tr>
+            <tr>
+                <td>font-weight</td>
+                <td>specifies thickness or weight of the font</td>
+                <td>font-weight: normal|bold|number|initial|inherit|unset</td>
+            </tr>
+            <tr>
+                <td>font-size</td>
+                <td>Specifies the size of the text in HTML document</td>
+                <td>font-size: small|medium|large|initial|inherit</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2 class="textprop"><strong><span>Text Properties:</span></strong></h2><h3>CSS text formatting properties are used to format and style text by setting their color, alignment, spacing, etc. as per requirement</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Description</th>
+                <th>Syntax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>text-color</td>
+                <td>Sets the color of the text.</td>
+                <td>color: value;</td>
+            </tr>
+            <tr>
+                <td>text-alignment</td>
+                <td>Defines the horizontal alignment of the text.</td>
+                <td>text-align: left|right|center|justify|inital|inherit;</td>
+            </tr>
+            <tr>
+                <td>text-decoration</td>
+                <td>Add or remove text-decorations</td>
+                <td>text-decoration: decoration-type;</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
