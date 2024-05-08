@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Cheat Sheet - A Basic Guide to CSS</title>
+    <link href="resources\css\styles.css" rel="stylesheet"
 </head>
 <body>
     <header>
         <h1>What is CSS?</h1>
-            <p><a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noreferrer noopener">CSS</a> - Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in a markup language such as HTML, XML, etc. CSS enhances the look and feel of the webpage by describing how elements should be rendered on screen or in other media.</p>
+        <p><a href="https://en.wikipedia.org/wiki/CSS" target="_blank" rel="noreferrer noopener">CSS</a> - Cascading Style Sheets is a stylesheet language used to describe the presentation of a document written in a markup language such as HTML, XML, etc. CSS enhances the look and feel of the webpage by describing how elements should be rendered on screen or in other media.</p>
 
         <h1>What is a CSS Cheat Sheet?</h1>
-            <p>This CSS Cheat Sheet provides you with the most common style snippets CSS gradient, background, button, font family, order, radius, box, and text-shadow generators, color picker, and more tools to add more visual weight to your document. All these and other useful web design tools can be found on this page. </p>
+        <p>This CSS Cheat Sheet provides you with the most common style snippets CSS gradient, background, button, font family, order, radius, box, and text-shadow generators, color picker, and more tools to add more visual weight to your document. All these and other useful web design tools can be found on this page.</p>
     </header>
-    <h2 class="selectors"><span><strong>Selectors:</strong></span></h2><h3>Used to find or select the HTML elements you want to style. These are categorized as follows:</h3>
+    <h2 class="selectors"><strong>Selectors:</strong></h2>
+    <h3>Used to find or select the HTML elements you want to style. These are categorized as follows:</h3>
 
     <table>
         <thead>
@@ -22,48 +24,49 @@
                 <th>Description</th>
                 <th>Syntax</th>
             </tr>
+        </thead>
         <tbody>
             <tr>
                 <td>Universal</td>
-                <td>Selects all elements on the pages</td>
-                <td>*{property:value;}</td>
+                <td>Selects all elements on the page.</td>
+                <td>* {property: value;}</td>
             </tr>
             <tr>
                 <td>Type</td>
-                <td>Selects all HTML tag/element of given type in your document</td>
-                <td>p {property:value;}</td>
+                <td>Selects all HTML tags/elements of a given type in your document.</td>
+                <td>p {property: value;}</td>
             </tr>
             <tr>
                 <td>Id</td>
-                <td>Selects and element based on the value of its unique id attribute</td>
-                <td>#id {property:value;}</td>
+                <td>Selects an element based on the value of its unique id attribute.</td>
+                <td>#id {property: value;}</td>
             </tr>
             <tr>
                 <td>Class</td>
-                <td>Selects all elements in the document that have the given class attribute</td>
-                <td>.class {property:value;}</td>
+                <td>Selects all elements in the document that have the given class attribute.</td>
+                <td>.class {property: value;}</td>
             </tr>
             <tr>
                 <td>Attribute</td>
-                <td>Selects all elements that have a specified attribute</td>
-                <td>a[attribute=value]{property:value;}</td>
+                <td>Selects all elements that have a specified attribute.</td>
+                <td>a[attribute=value] {property: value;}</td>
             </tr>
             <tr>
                 <td>Combinators</td>
-                <td>Complex selectors consisting of more than one selector having some relationship between them</td>
-                <td>selector 1 selector2/ selector1+selector2/selector 1> selector 2 {property:value;}</td>
+                <td>Complex selectors consisting of more than one selector having some relationship between them.</td>
+                <td>selector1 selector2 / selector1 + selector2 / selector1 > selector2 {property: value;}</td>
             </tr>
             <tr>
-                <td>Psuedo</td>
-                <td>Define the special state of an element to add an effect to an existing element based on its states</td>
-                <td>selector: pseudo-class{property:value;}</td>
+                <td>Pseudo</td>
+                <td>Defines the special state of an element to add an effect to an existing element based on its states.</td>
+                <td>selector: pseudo-class {property: value;}</td>
             </tr>
 
-        </tbody>    
-        </thead>
+        </tbody>
     </table>
-    
-    <h2 class="fontprop"><strong><span>Font Properties:</span></strong></h2><h3>CSS font properties are used to set the font's content of the HTML element as per requirement.</h3>
+
+    <h2 class="fontprop"><strong><span>Font Properties:</span></strong></h2>
+    <h3>CSS font properties are used to set the font's content of the HTML element as per requirement.</h3>
 
     <table>
         <thead>
@@ -71,38 +74,39 @@
                 <th>Property</th>
                 <th>Description</th>
                 <th>Syntax</th>
-            </tr>    
+            </tr>
         </thead>
         <tbody>
             <tr>
                 <td>font-family</td>
-                <td>Specifies the font family to be usedfor the element's text content.</td>
-                <td>font-family:family-name|generic-family|initial|inherit;</td>
+                <td>Specifies the font family to be used for the element's text content.</td>
+                <td>font-family: family-name | generic-family | initial | inherit;</td>
             </tr>
             <tr>
                 <td>font-style</td>
-                <td>Styles the text content in a normal, italic, or oblique face from it's font-family</td>
-                <td>font-style:normal |italic|oblique|initial|inherit</td>
+                <td>Styles the text content in a normal, italic, or oblique face from its font-family.</td>
+                <td>font-style: normal | italic | oblique | initial | inherit;</td>
             </tr>
             <tr>
                 <td>font-variant</td>
                 <td>Converts all lowercase letters into uppercase letters.</td>
-                <td>font-variant: normal|smallcaps|initial;</td>
+                <td>font-variant: normal | smallcaps | initial;</td>
             </tr>
             <tr>
                 <td>font-weight</td>
-                <td>specifies thickness or weight of the font</td>
-                <td>font-weight: normal|bold|number|initial|inherit|unset</td>
+                <td>Specifies the thickness or weight of the font.</td>
+                <td>font-weight: normal | bold | number | initial | inherit | unset;</td>
             </tr>
             <tr>
                 <td>font-size</td>
-                <td>Specifies the size of the text in HTML document</td>
-                <td>font-size: small|medium|large|initial|inherit</td>
+                <td>Specifies the size of the text in the HTML document.</td>
+                <td>font-size: small | medium | large | initial | inherit;</td>
             </tr>
         </tbody>
     </table>
 
-    <h2 class="textprop"><strong><span>Text Properties:</span></strong></h2><h3>CSS text formatting properties are used to format and style text by setting their color, alignment, spacing, etc. as per requirement</h3>
+    <h2 class="textprop"><strong><span>Text Properties:</span></strong></h2>
+    <h3>CSS text formatting properties are used to format and style text by setting their color, alignment, spacing, etc. as per requirement.</h3>
 
     <table>
         <thead>
@@ -121,14 +125,133 @@
             <tr>
                 <td>text-alignment</td>
                 <td>Defines the horizontal alignment of the text.</td>
-                <td>text-align: left|right|center|justify|inital|inherit;</td>
+                <td>text-align: left | right | center | justify | initial | inherit;</td>
             </tr>
             <tr>
                 <td>text-decoration</td>
-                <td>Add or remove text-decorations</td>
+                <td>Adds or removes text decorations.</td>
                 <td>text-decoration: decoration-type;</td>
             </tr>
+            <tr>
+                <td>text-transformation</td>
+                <td>Changes the case (uppercase | lowercase) of text.</td>
+                <td>text-transform: none | capitalize | uppercase | lowercase | initial | inherit;</td>
+            </tr>
+            <tr>
+                <td>text-indentation</td>
+                <td>Indents the first line of a text block.</td>
+                <td>text-indent: length | initial | inherit;</td>
+            </tr>
+            <tr>
+                <td>letter spacing</td>
+                <td>Specifies spacing between the characters of the text.</td>
+                <td>letter-spacing: normal | length | initial | inherit;</td>
+            </tr>
+            <tr>
+                <td>line height</td>
+                <td>Specifies the space between the lines of the text.</td>
+                <td>line-height: normal | number | length | percentage | initial | inherit;</td>
+            </tr>
+            <tr>
+                <td>text-shadow</td>
+                <td>Adds shadow to the text.</td>
+                <td>text-shadow: h-shadow v-shadow blur radius color | none | initial | inherit;</td>
+            </tr>
+            <tr>
+                <td>word spacing</td>
+                <td>Specifies space between words of lines.</td>
+                <td>word-spacing: normal | length | initial | inherit;</td>
+            </tr>
+        </tbody>
+    </table>
 
+    <h2><strong><span>Background Properties:</span></strong></h2>
+    <h3>The CSS Background properties are used to design the background and define the background effects for elements.</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Description</th>
+                <th>Syntax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>background-color</td>
+                <td>Specifies the background color of an element.</td>
+                <td>background-color: color_name;</td>
+            </tr>
+            <tr>
+                <td>background-image</td>
+                <td>Adds one or more background images to an element.</td>
+                <td>background-image: url('url');</td>
+            </tr>
+            <tr>
+                <td>background-repeat</td>
+                <td>Adds or removes repetition of the background image both horizontally and vertically.</td>
+                <td>background-repeat: repeat | repeat-x | repeat-y | no-repeat | initial | inherit;</td>
+            </tr>
+            <tr>
+                <td>background-position</td>
+                <td>Specifies the positioning of the image in a certain way.</td>
+                <td>background-position: value;</td>
+            </tr>
+            <tr>
+                <td>background-origin</td>
+                <td>Used to adjust the background image of the webpage.</td>
+                <td>background-origin: padding-box | border-box | content-box | initial | inherit;</td>
+            </tr>
+            <tr>
+                <td>background-attachment</td>
+                <td>Specifies the kind of attachment of the background image in its container.</td>
+                <td>background-attachment: scroll | fixed | local | initial | inherit;</td>
+            </tr>
+            <tr>
+                <td>background-clip</td>
+                <td>Used to define how far the background (color or image) should extend.</td>
+                <td>background-clip: border-box | padding-box | content-box | initial | inherit;</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2><strong><span>Box Properties:</span></strong></h2>
+    <h3>The CSS box model is essentially a box that wraps around every HTML element consisting of the border, padding, margin, and content. The CSS properties used to attain the box model are:</h3>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Property</th>
+                <th>Description</th>
+                <th>Syntax</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>margin</td>
+                <td>Used to set the margin.</td>
+                <td>margin: value;</td>
+            </tr>
+            <tr>
+                <td>padding</td>
+                <td>Specifies the space between the border and the content of the selector.</td>
+                <td>padding: value;</td>
+            </tr>
+            <tr>
+                <td>border</td>
+                <td>Sets the element's border width, style, and color.</td>
+                <td>border: value;</td>
+            </tr>
+            <tr>
+                <td>width</td>
+                <td>Used to set an element's width.</td>
+                <td>width: value;</td>
+            </tr>
+            <tr>
+                <td>height</td>
+                <td>Used to set an element's height.</td>
+                <td>height: value;</td>
+            </tr>
         </tbody>
     </table>
 </body>
