@@ -265,24 +265,29 @@
         </tbody>
     </table>
 
-    <button onclick="backToTop()" id="btnTop" title="Go to top">&#8679; Top</button>
+     <!-- Back to Top Button -->
+     <button id="btnTop" onclick="scrollToTop()">Top</button>
 
-    <script>
-        // Function to scroll to the top of the page
-        function backToTop() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
-        }
+     <script>
+         // Function to scroll to the top of the page
+         function scrollToTop() {
+             window.scrollTo({
+                 top: 0,
+                 behavior: 'smooth' // Optional smooth scrolling behavior
+             });
+         }
+ 
+         // Show or hide the back-to-top button based on scroll position
+         window.addEventListener('scroll', function() {
+             var btnTop = document.getElementById('btnTop');
+             if (window.pageYOffset > 100) {
+                 btnTop.style.display = 'block';
+             } else {
+                 btnTop.style.display = 'none';
+             }
+         });
+     </script>
 
-        // Function to handle search
-        function search() {
-            // Get the input value
-            var searchText = document.getElementById("searchInput").value.toLowerCase();
-
-            // Perform your search logic here based on searchText
-            // For example, you can filter content based on keywords
-        }
-    </script>
 </body>
 </html>
 
