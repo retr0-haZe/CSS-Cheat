@@ -1,0 +1,72 @@
+/* Resetting default margins and paddings */
+body,
+h1,
+h2,
+h3,
+p,
+table,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+/* Making sure content fits within the viewport */
+html, body {
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif; /* Modern and widely available font */
+}
+
+/* Styling the header */
+header {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px;
+}
+
+/* Styling the header text */
+h1 {
+    color: #333; /* Dark gray text color */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Styling the paragraph text in the header */
+p {
+    color: #666; /* Medium gray text color */
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Styling the main content */
+h2,
+h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Styling the table headers */
+th {
+    background-color: #f0f0f0; /* Light gray background */
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 8px;
+    text-align: left;
+}
+
+/* Styling the table cells */
+td {
+    border: 1px solid #ccc; /* Light gray border */
+    padding: 8px;
+}
+
+/* Styling alternate rows in the table */
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Even row background color */
+}
