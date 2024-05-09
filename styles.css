@@ -21,13 +21,11 @@ header {
     padding: 20px;
 }
 
-
 h1 {
     color: #333; 
     font-size: 24px;
     margin-bottom: 10px;
 }
-
 
 p {
     color: #666;
@@ -35,20 +33,18 @@ p {
     line-height: 1.5;
 }
 
-
 h2,
 h3 {
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
-
+/* Table styles */
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
-
 
 th,
 td {
@@ -56,50 +52,39 @@ td {
     padding: 8px;
 }
 
-
 tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-
+/* Navigation styles */
 nav {
     background-color: #333; 
     color: #fff;
     padding: 10px 0;
 }
 
-.container {
+.navigation {
+    list-style-type: none;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
+    justify-content: center; /* Center align the navigation items */
 }
 
-.search-container {
-    display: flex;
+.navigation li {
+    margin-right: 20px; /* Add space between navigation items */
 }
 
-.search-container input[type="text"] {
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    margin-right: 5px;
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
 }
 
-.search-container button {
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    background-color: #4CAF50; 
-    color: white;
-    cursor: pointer;
+.navigation a:hover {
+    background-color: #555; /* Darken background color on hover */
 }
 
-.search-container button:hover {
-    background-color: #45a049; 
-}
-
-
+/* Back to Top Button styles */
 #btnTop {
     display: none;
     position: fixed;
