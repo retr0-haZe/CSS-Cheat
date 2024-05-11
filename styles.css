@@ -100,6 +100,14 @@ nav {
     height: 40px;
     font-size: 20px;
     cursor: pointer;
+    /* Add some styles to make the button look better */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#btnTop:hover {
+    background-color: #555;
+    transform: scale(1.1);
 }
 
 #btnTop:hover {
